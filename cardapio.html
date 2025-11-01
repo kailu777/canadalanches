@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Cardápio - Canada Lanches</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CANADA Lanches</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cardapio.html" class="active">Nosso Cardápio</a></li>
+                <li><a href="sobre.html">Nossa História</a></li>
+                <li><a href="contato.html">Localização</a></li>
+            </ul>
+            <a href="pedir.html" class="btn btn-primary">
+                Peça Online
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-page section-dark">
+            <div class="container">
+                <h1>Cardápio Exclusivo</h1>
+
+                <div class="menu-category">
+                    <h2>🍔 Clássicos de Carne & X-Saladas</h2>
+                    <div class="menu-grid">
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>X-Burguer</h3>
+                                <span class="price">R$ 18,00</span>
+                            </div>
+                            <p class="description">Pão, hambúrguer, queijo e maionese da casa.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('X-Burguer', 18.00)">Adicionar +</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>X-Salada</h3>
+                                <span class="price">R$ 20,00</span>
+                            </div>
+                            <p class="description">Pão, hambúrguer, queijo, alface e tomate. O tradicional que nunca falha.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('X-Salada', 20.00)">Adicionar +</button>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>X-Bacon</h3>
+                                <span class="price">R$ 22,00</span>
+                            </div>
+                            <p class="description">Pão, hambúrguer, queijo e fatias generosas de bacon crocante.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('X-Bacon', 22.00)">Adicionar +</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>X-Egg</h3>
+                                <span class="price">R$ 21,00</span>
+                            </div>
+                            <p class="description">Pão, hambúrguer, queijo e ovo frito na chapa.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('X-Egg', 21.00)">Adicionar +</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>X-Tudo</h3>
+                                <span class="price">R$ 25,00</span>
+                            </div>
+                            <p class="description">Pão, hambúrguer, queijo, bacon, ovo, presunto, alface e tomate.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('X-Tudo', 25.00)">Adicionar +</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>X-Tudo Duplo</h3>
+                                <span class="price">R$ 35,00</span>
+                            </div>
+                            <p class="description">Tudo em dobro! Dois hambúrgueres, duplo queijo, duplo bacon e todos os acompanhamentos.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('X-Tudo Duplo', 35.00)">Adicionar +</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Triplo Bacon Cheddar</h3>
+                                <span class="price">R$ 39,00</span>
+                            </div>
+                            <p class="description">Três hambúrgueres, muito bacon e uma cascata de cheddar cremoso.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('Triplo Bacon Cheddar', 39.00)">Adicionar +</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h2>🍗 Frango e Especiais</h2>
+                    <div class="menu-grid">
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Frango Simples</h3>
+                                <span class="price">R$ 17,00</span>
+                            </div>
+                            <p class="description">Pão, filé de frango desfiado ou em bife, queijo e maionese.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('Frango Simples', 17.00)">Adicionar +</button>
+                        </div>
+
+                         <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Burguer Frango</h3>
+                                <span class="price">R$ 19,00</span>
+                            </div>
+                            <p class="description">Pão, hambúrguer de frango, queijo e salada.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('Burguer Frango', 19.00)">Adicionar +</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Frango Bacon</h3>
+                                <span class="price">R$ 24,00</span>
+                            </div>
+                            <p class="description">Frango desfiado/bife, queijo, bacon e molho especial.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('Frango Bacon', 24.00)">Adicionar +</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Frango Plus</h3>
+                                <span class="price">R$ 26,00</span>
+                            </div>
+                            <p class="description">Frango, queijo, ovo, presunto, alface, tomate e batata palha.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('Frango Plus', 26.00)">Adicionar +</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Churrasco Tudo</h3>
+                                <span class="price">R$ 30,00</span>
+                            </div>
+                            <p class="description">Delicioso bife de churrasco, queijo, bacon, ovo e salada no pão.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('Churrasco Tudo', 30.00)">Adicionar +</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Dog Especial</h3>
+                                <span class="price">R$ 15,00</span>
+                            </div>
+                            <p class="description">Pão, duas salsichas, purê de batata, milho, vinagrete e queijo ralado.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('Dog Especial', 15.00)">Adicionar +</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Frango Tudo</h3>
+                                <span class="price">R$ 27,00</span>
+                            </div>
+                            <p class="description">Frango desfiado/bife, queijo, bacon, ovo, presunto, alface e tomate. Completo!</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('Frango Tudo', 27.00)">Adicionar +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h2>🥤 Bebidas Geladas</h2>
+                    <div class="menu-grid">
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Coca-Cola (Lata)</h3>
+                                <span class="price">R$ 6,00</span>
+                            </div>
+                            <p class="description">Lata de 350ml, bem gelada.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('Coca-Cola (Lata)', 6.00)">Adicionar +</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Guaraná (Lata)</h3>
+                                <span class="price">R$ 5,50</span>
+                            </div>
+                            <p class="description">Lata de 350ml de Guaraná Antarctica.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('Guaraná (Lata)', 5.50)">Adicionar +</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Coca-Cola (2 Litros)</h3>
+                                <span class="price">R$ 12,00</span>
+                            </div>
+                            <p class="description">Garrafa de 2 litros, ideal para a família.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('Coca-Cola (2 Litros)', 12.00)">Adicionar +</button>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Guaraná (2 Litros)</h3>
+                                <span class="price">R$ 10,00</span>
+                            </div>
+                            <p class="description">Garrafa de 2 litros de Guaraná Antarctica.</p>
+                            <button class="btn btn-primary" style="margin-top: 10px; padding: 5px 10px; font-size: 0.9rem;" onclick="adicionarAoCarrinho('Guaraná (2 Litros)', 10.00)">Adicionar +</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <section class="carrinho-flutuante">
+        <h3>🛒 Seu Pedido</h3>
+        <ul id="lista-carrinho">
+            </ul>
+        <div class="total-area">
+            <span>TOTAL:</span>
+            <span>R$ <span id="total-carrinho">0,00</span></span>
+        </div>
+        <button class="btn btn-whatsapp" onclick="finalizarPedido()">
+            Finalizar e Enviar para o WhatsApp
+        </button>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Canada Lanches</h4>
+                    <p>O Sabor Gigante do Norte!</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Horários</h4>
+                    <p>Segunda a Sábado: 17h às 23h</p>
+                    <p>Domingo: Fechado</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <a href="#">Instagram</a><br>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Canada Lanches. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="scritpt.js"></script>
+
+</body>
+</html>
