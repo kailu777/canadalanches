@@ -400,6 +400,9 @@ footer {
 .order-page {
     text-align: center;
     padding: 6rem 0;
+    /* Correção Mobile */
+    padding-left: 1rem; 
+    padding-right: 1rem;
 }
 .order-page h1 {
     font-size: 3.5rem;
@@ -425,7 +428,7 @@ footer {
 
 /* --- 6. Estilos do Carrinho Flutuante (Cardápio) --- */
 
-/* Definição da Animação de Sombra Pulsante (NOVO) */
+/* Definição da Animação de Sombra Pulsante (bounce) */
 @keyframes bounce {
     0% {
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7); /* Sombra mais escura */
@@ -573,14 +576,29 @@ footer {
     h1 { font-size: 2.8rem; }
     h2 { font-size: 2rem; }
     
+    /* Correções no Header para Mobile */
+    header { 
+        height: 70px; 
+        padding: 0 1rem;
+    }
+    header nav {
+        padding: 0;
+    }
+    .logo {
+        width: 150px; 
+        height: 40px;
+    }
+    header .btn-primary {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+    }
+    
     .hero-content h1 { font-size: 3.5rem; }
     .hero-content p { font-size: 1.1rem; }
 
     .nav-links {
-        display: none;
+        display: none; /* Oculta o menu de links no mobile */
     }
-    
-    header { height: 70px; }
     
     .footer-content {
         grid-template-columns: 1fr;
@@ -590,8 +608,16 @@ footer {
         display: block;
     }
     
+    /* Correção nos botões da página Pedir Online */
+    .order-page h1 {
+        font-size: 2.5rem;
+    }
+    .order-page .subtitle {
+        font-size: 1rem;
+    }
     .btn-large {
-        min-width: 100%;
+        padding: 1rem 2rem;
+        min-width: 90%; 
         font-size: 1.1rem;
     }
     
