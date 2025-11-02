@@ -559,6 +559,8 @@ footer {
 }
 
 /* --- 7. Responsividade (Celular) --- */
+
+/* Estilos aplicados até 900px (Tablets em geral) */
 @media (max-width: 900px) {
     .menu-grid {
         grid-template-columns: 1fr;
@@ -570,63 +572,69 @@ footer {
         margin-top: 2rem;
         height: 300px;
     }
+    /* Os links de navegação ainda estão visíveis aqui */
+    .nav-links {
+        margin-left: 1rem;
+    }
+    .nav-links li {
+        margin-left: 1.5rem;
+    }
 }
 
-@media (max-width: 768px) {
-    h1 { font-size: 2.8rem; }
-    h2 { font-size: 2rem; }
+/* Estilos aplicados até 500px (Celulares menores) */
+@media (max-width: 500px) {
+    /* Ocultamos a navegação principal (links) em telas muito pequenas */
+    .nav-links {
+        display: none; 
+    }
+
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.8rem; }
     
     /* Correções no Header para Mobile */
     header { 
-        height: 70px; 
-        padding: 0 1rem;
+        height: 60px; /* Header ainda menor */
+        padding: 0 0.5rem;
     }
     header nav {
         padding: 0;
     }
     .logo {
-        width: 150px; 
-        height: 40px;
+        width: 120px; 
+        height: 35px;
     }
     header .btn-primary {
-        padding: 0.6rem 1rem;
-        font-size: 0.8rem;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.7rem;
+        margin-left: auto; /* Garante que ele vá para a direita */
     }
     
-    .hero-content h1 { font-size: 3.5rem; }
-    .hero-content p { font-size: 1.1rem; }
+    .hero-content h1 { font-size: 3rem; }
+    .hero-content p { font-size: 1rem; }
 
-    .nav-links {
-        display: none; /* Oculta o menu de links no mobile */
-    }
-    
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .footer-col h4 {
-        display: block;
-    }
     
-    /* Correção nos botões da página Pedir Online */
+    /* Ajuste na página Pedir Online */
     .order-page h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     .order-page .subtitle {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .btn-large {
-        padding: 1rem 2rem;
-        min-width: 90%; 
-        font-size: 1.1rem;
+        padding: 0.8rem 1.5rem;
+        min-width: 95%; 
+        font-size: 1rem;
     }
     
     /* Move o carrinho para a lateral em mobile */
     .carrinho-flutuante {
-        width: 90%;
-        left: 5%;
+        width: 95%;
+        left: 2.5%;
         right: auto;
-        bottom: 15px;
+        bottom: 10px;
     }
 }
-
